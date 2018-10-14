@@ -1,0 +1,82 @@
+//Mobile
+.murmur
+	position: relative
+	background: #96aaa1
+	min-height: 600px
+	display: flex
+	justify-content: center
+	text-align: left
+	align-items: center
+	+pad(10rem null null)
+	.text
+		text-align: center
+		color: #fff
+		h2
+			+fz(1.5rem)
+			letter-spacing: 8px
+		p
+			+pad(1rem null null)
+		a
+			+mar(null null 2rem)
+			color: #fff
+			background: #96aaa1
+			border: 1px solid #fff
+			border-radius: 0
+		figure
+			img
+				width: 100%
+//Tablet
++media-breakpoint-up(md)
+	.murmur
+		min-height: 0
+		.text
+			text-align: left
+			h2
+				+fz(1.5rem)
+				letter-spacing: 6px
+			p
+				+pad(1rem null null)
+			a
+				&:hover
+					background: darken(#96aaa1, 10%)
+		figure
+			img
+				position: absolute
+				bottom: -4rem
+				right: 0
+//PC
++media-breakpoint-up(lg)
+	.murmur
+		min-height: 600px
+		+pad(7rem null null)
+		.text
+			h2
+				+fz(2rem)
+				letter-spacing: 8px
+			p
+				+pad(1rem null null)
+			a
+				+mar(2rem null null)
+				&:hover
+					background: darken(#96aaa1, 10%)
+		figure
+			img
+				position: absolute
+				bottom: -12rem
+				right: 0
+.murmur			
+	+media-breakpoint-up(xl)
+		.text
+			h2
+				+fz(2.5rem)
+				letter-spacing: 8px
+			p
+				+pad(1rem null null)
+			a
+				+mar(2rem null null)
+				&:hover
+					background: darken(#96aaa1, 10%)
+		figure
+			img
+				position: absolute
+				bottom: -14rem

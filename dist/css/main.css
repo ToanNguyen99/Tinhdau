@@ -6322,4 +6322,79 @@ html, body {
   .container {
     width: auto; } }
 
+.murmur {
+  position: relative;
+  background: #96aaa1;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  padding-top: 10rem; }
+  .murmur .text {
+    text-align: center;
+    color: #fff; }
+    .murmur .text h2 {
+      font-size: 1.5rem;
+      letter-spacing: 8px; }
+    .murmur .text p {
+      padding-top: 1rem; }
+    .murmur .text a {
+      margin-bottom: 2rem;
+      color: #fff;
+      background: #96aaa1;
+      border: 1px solid #fff;
+      border-radius: 0; }
+    .murmur .text figure img {
+      width: 100%; }
+
+@media (min-width: 768px) {
+  .murmur {
+    min-height: 0; }
+    .murmur .text {
+      text-align: left; }
+      .murmur .text h2 {
+        font-size: 1.5rem;
+        letter-spacing: 6px; }
+      .murmur .text p {
+        padding-top: 1rem; }
+      .murmur .text a:hover {
+        background: #7a9388; }
+    .murmur figure img {
+      position: absolute;
+      bottom: -4rem;
+      right: 0; } }
+
+@media (min-width: 992px) {
+  .murmur {
+    min-height: 600px;
+    padding-top: 7rem; }
+    .murmur .text h2 {
+      font-size: 2rem;
+      letter-spacing: 8px; }
+    .murmur .text p {
+      padding-top: 1rem; }
+    .murmur .text a {
+      margin-top: 2rem; }
+      .murmur .text a:hover {
+        background: #7a9388; }
+    .murmur figure img {
+      position: absolute;
+      bottom: -12rem;
+      right: 0; } }
+
+@media (min-width: 1200px) {
+  .murmur .text h2 {
+    font-size: 2.5rem;
+    letter-spacing: 8px; }
+  .murmur .text p {
+    padding-top: 1rem; }
+  .murmur .text a {
+    margin-top: 2rem; }
+    .murmur .text a:hover {
+      background: #7a9388; }
+  .murmur figure img {
+    position: absolute;
+    bottom: -14rem; } }
+
 /*# sourceMappingURL=main.css.map */
