@@ -8,6 +8,7 @@
 	text-align: left
 	align-items: center
 	+pad(10rem null null)
+	z-index: 99
 	.text
 		text-align: center
 		color: #fff
@@ -25,6 +26,93 @@
 		figure
 			img
 				width: 100%
+.products
+	position: relative
+	display: flex
+	justify-content: center
+	text-align: center
+	align-items: center
+	z-index: 9
+	.container-fluid
+		+pad(null 0 null 0)
+	.left
+		background: #b2989b
+		min-height: 400px
+		.text
+			z-index: 2
+			position: absolute
+			bottom: 0%
+			left: 10%
+			height: 75%
+			width: 80%
+			margin: auto
+			content: ''
+			background: #a07d83
+			z-index: 1
+			box-shadow: 16px 20px 69px 0px black
+			opacity: .95
+			color: #fff
+			+pad(4rem 2rem null)
+			h2
+				letter-spacing: 8px
+			p
+				color: #dad0cf
+			a
+				color: #fff
+				+mar(1rem)
+				border: 1px solid #fff
+		figure
+			img
+				position: absolute
+				bottom: 0rem
+				transform: translateX(-50%)
+	.right
+		background: #98a4b0
+		min-height: 400px
+		figure
+			img
+				+pad(3rem 2rem null)
+				bottom: 5rem
+				position: absolute
+				transform: translateX(-50%)
+.about
+	position: relative
+	background: #fff
+	min-height: 680px
+	display: flex
+	justify-content: center
+	text-align: left
+	// align-items: center
+	.container-fluid
+		+pad(null 0)
+	.text
+		+pad(3rem 2rem null)
+		+fw(bold)
+		text-align: center
+		h2
+			letter-spacing: 8px
+		p
+			color: #5b5b5b
+		a
+			color: #749584
+			border: 2px solid #749584
+			border-radius: 0
+	.video
+		display: flex
+		justify-content: center
+		bottom: 0
+		iframe
+			+pad(3rem null)
+			height: 300px
+			width: 350px
++media-breakpoint-up(sm)
+	.about
+		.text
+			+pad(8rem 2rem null)
+		.video
+			iframe
+				height: 400px
+				width: 450px
 //Tablet
 +media-breakpoint-up(md)
 	.murmur
@@ -39,11 +127,45 @@
 			a
 				&:hover
 					background: darken(#96aaa1, 10%)
+					transition: .5s all ease-in-out
 		figure
 			img
 				position: absolute
 				bottom: -4rem
 				right: 0
+	.products
+		.left
+			.texts
+				a
+					border: none
+					+mar(2rem)
+					&:hover
+						background: darken(#a07d83, 10%)
+						transition: .5s all ease-in-out
+			figure
+				img
+					bottom: -2rem
+		.right
+			figure
+				img
+					bottom: -2rem
+					height: 70%
+	.about
+		min-height: 480px
+		align-items: center
+		.text
+			text-align: left
+			p
+				+pad(1rem null null)
+			a
+				+mar(1rem null)
+				&:hover
+					background: lighten(#749584, 40%)
+		.video
+			iframe
+				height: 550px
+				width: 100%
+			
 //PC
 +media-breakpoint-up(lg)
 	.murmur
@@ -64,8 +186,19 @@
 				position: absolute
 				bottom: -12rem
 				right: 0
-.murmur			
-	+media-breakpoint-up(xl)
+	.products
+		.left
+			figure
+				img
+					bottom: -4rem
+		.right
+			figure
+				img
+					height: auto
+	.about
+		min-height: 680px
++media-breakpoint-up(xl)
+	.murmur	
 		.text
 			h2
 				+fz(2.5rem)
@@ -80,3 +213,11 @@
 			img
 				position: absolute
 				bottom: -14rem
+	.products
+		.left
+			.text
+				left: 20%
+				width: 60%
+	.about
+		.text
+			+pad(10rem 10rem null)

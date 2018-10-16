@@ -6330,7 +6330,8 @@ html, body {
   justify-content: center;
   text-align: left;
   align-items: center;
-  padding-top: 10rem; }
+  padding-top: 10rem;
+  z-index: 99; }
   .murmur .text {
     text-align: center;
     color: #fff; }
@@ -6348,6 +6349,102 @@ html, body {
     .murmur .text figure img {
       width: 100%; }
 
+.products {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  z-index: 9; }
+  .products .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+  .products .left {
+    background: #b2989b;
+    min-height: 400px; }
+    .products .left .text {
+      z-index: 2;
+      position: absolute;
+      bottom: 0%;
+      left: 10%;
+      height: 75%;
+      width: 80%;
+      margin: auto;
+      content: '';
+      background: #a07d83;
+      z-index: 1;
+      box-shadow: 16px 20px 69px 0px black;
+      opacity: .95;
+      color: #fff;
+      padding-top: 4rem;
+      padding-right: 2rem;
+      padding-left: 2rem; }
+      .products .left .text h2 {
+        letter-spacing: 8px; }
+      .products .left .text p {
+        color: #dad0cf; }
+      .products .left .text a {
+        color: #fff;
+        margin: 1rem;
+        border: 1px solid #fff; }
+    .products .left figure img {
+      position: absolute;
+      bottom: 0rem;
+      transform: translateX(-50%); }
+  .products .right {
+    background: #98a4b0;
+    min-height: 400px; }
+    .products .right figure img {
+      padding-top: 3rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      bottom: 5rem;
+      position: absolute;
+      transform: translateX(-50%); }
+
+.about {
+  position: relative;
+  background: #fff;
+  min-height: 680px;
+  display: flex;
+  justify-content: center;
+  text-align: left; }
+  .about .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+  .about .text {
+    padding-top: 3rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    text-align: center; }
+    .about .text h2 {
+      letter-spacing: 8px; }
+    .about .text p {
+      color: #5b5b5b; }
+    .about .text a {
+      color: #749584;
+      border: 2px solid #749584;
+      border-radius: 0; }
+  .about .video {
+    display: flex;
+    justify-content: center;
+    bottom: 0; }
+    .about .video iframe {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      height: 300px;
+      width: 350px; }
+
+@media (min-width: 576px) {
+  .about .text {
+    padding-top: 8rem;
+    padding-right: 2rem;
+    padding-left: 2rem; }
+  .about .video iframe {
+    height: 400px;
+    width: 450px; } }
+
 @media (min-width: 768px) {
   .murmur {
     min-height: 0; }
@@ -6359,11 +6456,38 @@ html, body {
       .murmur .text p {
         padding-top: 1rem; }
       .murmur .text a:hover {
-        background: #7a9388; }
+        background: #7a9388;
+        transition: .5s all ease-in-out; }
     .murmur figure img {
       position: absolute;
       bottom: -4rem;
-      right: 0; } }
+      right: 0; }
+  .products .left .texts a {
+    border: none;
+    margin: 2rem; }
+    .products .left .texts a:hover {
+      background: #876369;
+      transition: .5s all ease-in-out; }
+  .products .left figure img {
+    bottom: -2rem; }
+  .products .right figure img {
+    bottom: -2rem;
+    height: 70%; }
+  .about {
+    min-height: 480px;
+    align-items: center; }
+    .about .text {
+      text-align: left; }
+      .about .text p {
+        padding-top: 1rem; }
+      .about .text a {
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+        .about .text a:hover {
+          background: #e8edea; }
+    .about .video iframe {
+      height: 550px;
+      width: 100%; } }
 
 @media (min-width: 992px) {
   .murmur {
@@ -6381,7 +6505,13 @@ html, body {
     .murmur figure img {
       position: absolute;
       bottom: -12rem;
-      right: 0; } }
+      right: 0; }
+  .products .left figure img {
+    bottom: -4rem; }
+  .products .right figure img {
+    height: auto; }
+  .about {
+    min-height: 680px; } }
 
 @media (min-width: 1200px) {
   .murmur .text h2 {
@@ -6395,6 +6525,13 @@ html, body {
       background: #7a9388; }
   .murmur figure img {
     position: absolute;
-    bottom: -14rem; } }
+    bottom: -14rem; }
+  .products .left .text {
+    left: 20%;
+    width: 60%; }
+  .about .text {
+    padding-top: 10rem;
+    padding-right: 10rem;
+    padding-left: 10rem; } }
 
 /*# sourceMappingURL=main.css.map */
