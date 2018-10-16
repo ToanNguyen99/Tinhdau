@@ -80,3 +80,146 @@
 			img
 				position: absolute
 				bottom: -14rem
+.murmur-mid
+	margin-top: 5rem
+	margin-bottom: 5rem
+	+media-breakpoint-up(lg)
+		margin-bottom: 10rem
+	.row
+		justify-content: center
+		align-items: center
+		text-align: center
+	.btn-info
+		background-color: rgb(150, 170, 161)
+		border-color: rgb(150, 170, 161)
+		margin: 1rem
+		padding: 1rem 2rem
+		&:active
+		&:focus
+			background-color: rgb(150, 170, 161) !important
+			border-color: rgb(150, 170, 161) !important
+			box-shadow: 0 0 0 0.2rem rgb(150, 170, 161) !important
+	.col-md-3
+		h5
+			color: rgba(150, 150, 150, 0.6588235294117647)
+			.item
+				margin-top: 1rem
+				strike
+					padding-left: .5rem
+					padding-right: .5rem
+					color: rgb(255, 0, 0)
+				span
+					padding: 3px
+					background: rgb(150, 170, 161)
+					color: #fff
+	+media-breakpoint-up(sm)
+		.center
+			text-align: left
+			p
+				overflow: hidden
+				max-height: 4.2rem
+			.btn-info
+				margin: 0
+		.col-md-3
+			text-align: left
+			h5
+				font-size: 1rem
+	+media-breakpoint-up(md)
+		.center
+			h3
+				letter-spacing: 2px
+			.box1
+				margin-top: 2rem
+				margin-bottom: 2rem
+			.btn-info
+				&:hover
+					background: rgb(88, 110, 100)
+					transition: all ease-in-out .3s
+		h5
+			padding-bottom: .8rem
+			padding-bottom: .8rem
+	+media-breakpoint-up(lg)
+		.center
+			h3
+				font-size: 3rem
+.murmur-mid-2
+	margin-bottom: 5rem
+	+media-breakpoint-up(lg)
+		margin-bottom: 10rem
+		margin-left: 5rem
+	.row
+		justify-content: center
+		align-items: center
+		text-align: center
+		.btn-info
+			background-color: rgb(150, 170, 161)
+			border-color: rgb(150, 170, 161)
+			margin: 1rem
+			padding: 1rem 2rem
+			&:active
+			&:focus
+				background-color: rgb(150, 170, 161) !important
+				border-color: rgb(150, 170, 161) !important
+				box-shadow: 0 0 0 0.2rem rgb(150, 170, 161) !important
+		p
+			margin-bottom: 0rem
+	.col-sm
+		figure
+			.img-2
+				box-shadow: 0 0 0 3px rgb(150, 170, 161)
+	+media-breakpoint-up(md)
+		.col-md-5
+			text-align: left
+			h5
+				font-size: 1.5rem	
+			p
+				margin-top: 1rem
+				margin-bottom: 1rem
+			.btn-info
+				margin: 0
+		.col-md-7
+			figure
+				.item1
+					.img-2
+						position: relative
+						width: 75%
+						box-shadow: none
+						z-index: 1
+					&:before
+						display: block
+						content: ""
+						border: 9px solid rgb(150, 170, 161)
+						width: 225px
+						height: 298px
+						+pos(abs, -43px null null 17px)
+						z-index: -1
+	+media-breakpoint-up(lg)
+		.col-md-5
+				h5
+					font-size: 2rem
+		.col-md-7
+			figure
+				.item1
+					.img-2
+					&:before
+						width: 296px
+						height: 366px
+	+media-breakpoint-up(xl)
+		.col-md-5
+			h5
+				font-size: 3rem
+				letter-spacing: 1px
+		.col-md-5
+			.btn-info
+				&:hover
+					background: rgb(88, 110, 100)
+					transition: all ease-in-out .3s
+		.col-md-7
+			figure
+				.item1
+					.img-2
+					&:before
+						width: 370px
+						height: 428px
+						+pos(abs, -43px null null 40px)
+					
