@@ -17,6 +17,7 @@
 			letter-spacing: 8px
 		p
 			+pad(1rem null null)
+			color: #fff
 		a
 			+mar(null null 2rem)
 			color: #fff
@@ -26,6 +27,69 @@
 		figure
 			img
 				width: 100%
+.murmur-mid
+	margin-top: 5rem
+	margin-bottom: 5rem
+	.row
+		justify-content: center
+		align-items: center
+		text-align: center
+		.text
+			h3
+				letter-spacing: 5px
+	a
+		.btn-info
+			border-radius: 0
+			background-color: rgb(150, 170, 161)
+			border-color: rgb(150, 170, 161)
+			margin: 1rem
+			padding: 1rem 2rem
+			&:active
+			&:focus
+				background-color: rgb(150, 170, 161) !important
+				border-color: rgb(150, 170, 161) !important
+				box-shadow: 0 0 0 0.2rem rgb(150, 170, 161) !important
+	.col-md-3
+		h5
+			color: rgba(150, 150, 150, 0.6588235294117647)
+			.item
+				margin-top: 1rem
+				strike
+					padding-left: .5rem
+					padding-right: .5rem
+					color: rgb(255, 0, 0)
+				span
+					padding: 3px
+					background: rgb(150, 170, 161)
+					color: #fff
+.murmur-mid-2
+	margin-bottom: 5rem
+	.row
+		justify-content: center
+		align-items: center
+		text-align: center
+		.text2
+			h5
+				+fz(2rem)
+				letter-spacing: 5px
+		a
+			.btn-info
+				border-radius: 0
+				background-color: rgb(150, 170, 161)
+				border-color: rgb(150, 170, 161)
+				margin: 1rem
+				padding: 1rem 2rem
+				&:active
+				&:focus
+					background-color: rgb(150, 170, 161) !important
+					border-color: rgb(150, 170, 161) !important
+					box-shadow: 0 0 0 0.2rem rgb(150, 170, 161) !important
+		p
+			margin-bottom: 0rem
+	.col-sm
+		figure
+			.img-2
+				box-shadow: 0 0 0 3px rgb(150, 170, 161)
 .products
 	position: relative
 	display: flex
@@ -106,6 +170,18 @@
 			height: 300px
 			width: 350px
 +media-breakpoint-up(sm)
+	.murmur-mid
+		.center
+			text-align: left
+			p
+				overflow: hidden
+				max-height: 4.2rem
+			.btn-info
+				margin: 0
+		.col-md-3
+			text-align: left
+			h5
+				font-size: 1rem
 	.about
 		.text
 			+pad(8rem 2rem null)
@@ -133,15 +209,61 @@
 				position: absolute
 				bottom: -4rem
 				right: 0
+	.murmur-mid
+		.row
+			.text
+				h3
+					letter-spacing: 8px
+		.center	
+			h3
+				letter-spacing: 2px
+			.box1
+				margin-top: 2rem
+				margin-bottom: 2rem
+			.btn-info
+				&:hover
+					background: rgb(88, 110, 100)
+					transition: all ease-in-out .3s
+		h5
+			padding-bottom: .8rem
+			padding-bottom: .8rem
+	.murmur-mid-2
+		.row
+			.text2
+				text-align: left
+				h5
+					+fz(2.5rem)
+					letter-spacing: 8px
+				p
+					margin-top: 1rem
+					margin-bottom: 1rem
+				.btn-info
+					margin: 0
+		.col-md-7
+			figure
+				.item1
+					.img-2
+						position: relative
+						width: 75%
+						box-shadow: none
+						z-index: 1
+					&:before
+						display: block
+						content: ""
+						border: 9px solid rgb(150, 170, 161)
+						width: 225px
+						height: 298px
+						+pos(abs, -43px null null 17px)
+						z-index: -1
 	.products
 		.left
-			.texts
+			.text
 				a
 					border: none
 					+mar(2rem)
 					&:hover
-						background: darken(#a07d83, 10%)
 						transition: .5s all ease-in-out
+						background: darken(#a07d83, 10%)
 			figure
 				img
 					bottom: -2rem
@@ -154,8 +276,11 @@
 		min-height: 480px
 		align-items: center
 		.text
+			width: 600px	
 			text-align: left
+			word-wrap: break-word
 			p
+				word-break: break-all
 				+pad(1rem null null)
 			a
 				+mar(1rem null)
@@ -186,6 +311,24 @@
 				position: absolute
 				bottom: -12rem
 				right: 0
+	.murmur-mid
+		margin-bottom: 10rem
+		.center
+			h3
+				font-size: 2.5rem
+	.murmur-mid-2
+		margin-bottom: 10rem
+		margin-left: 5rem
+		.col-md-5
+				h5
+					font-size: 2rem
+		.col-md-7
+			figure
+				.item1
+					.img-2
+					&:before
+						width: 296px
+						height: 366px
 	.products
 		.left
 			figure
@@ -197,6 +340,10 @@
 					height: auto
 	.about
 		min-height: 680px
+		.text
+			padding-left: 10rem
+			h2
+				+fz(2.5rem)
 +media-breakpoint-up(xl)
 	.murmur	
 		.text
@@ -213,11 +360,26 @@
 			img
 				position: absolute
 				bottom: -14rem
+	.murmur-mid-2
+		.col-md-5
+			h5
+				font-size: 2.5rem
+				letter-spacing: 1px
+		.col-md-5
+			.btn-info
+				&:hover
+					background: rgb(88, 110, 100)
+					transition: all ease-in-out .3s
+		.col-md-7
+			figure
+				.item1
+					.img-2
+					&:before
+						width: 370px
+						height: 428px
+						+pos(abs, -43px null null 40px)
 	.products
 		.left
 			.text
-				left: 20%
-				width: 60%
-	.about
-		.text
-			+pad(10rem 10rem null)
+				left: 15%	
+				width: 70%
